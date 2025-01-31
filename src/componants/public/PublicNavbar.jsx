@@ -166,7 +166,8 @@ const PublicNavbar = () => {
             <div className="flex flex-col items-center">
               <img
                 className="h-20 w-20 rounded-full shadow-lg"
-                src={`http://localhost:5000/uploads/${user?.profilePicture}`}
+                // src={`http://localhost:5000/uploads/${user?.profilePicture}`}
+                src={user?.profilePicture}
                 alt="Profile"
               />
               <h3 className="mt-4 text-lg font-semibold text-gray-800">
