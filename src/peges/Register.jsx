@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import * as yup from 'yup'
 import { toast } from 'react-toastify'
 import { useRegisterUserMutation } from '../redux/authApi'
+import { Link } from 'react-router-dom'
 
 const Register = () => {
   const [registerUser, { isSuccess, isLoading, isError, error }] = useRegisterUserMutation()
@@ -150,9 +151,9 @@ const Register = () => {
                 </button>
                 <p className="mt-6 text-xs text-gray-600 text-center">
                   Already have an account?{' '}
-                  <a href="login">
+                  <Link to="/login">
                     <span className="text-[#E9522C] font-semibold">Login</span>
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>
